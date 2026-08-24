@@ -1,0 +1,19 @@
+# === OS noise ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Editor noise ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Build / package noise (none used, kept for safety) ===
+node_modules/
+dist/
+build/
+
+# === Local-only images (commit real, working photos explicitly) ===
+assets/images/*.PSD
+assets/images/*.AI
