@@ -55,16 +55,13 @@ With this exact folder as a repo, hosted from `main` -> `/ (root)`:
 > Tip: after it's live, the **contact the owner** suggestions already point to your
 > GitHub profile when you add your name/bio there.
 
-## 📷 Real photos (optional but recommended)
+## 📷 Showcase photos
 
-The two showcase images currently render an elegant **gradient fallback**, which
-looks intentional on its own. To use real photos, place:
+The two showcase panels use real photos as their backgrounds, layered over the
+green gradient fallback:
 
-- `assets/images/diplomacy.jpg` — MUN / formal debate scene
-- `assets/images/stem-lab.jpg`  — chemical-engineering lab / science scene
-
-Drop them in and commit — no code changes needed; `css/styles.css` already wires
-them in.
+- `assets/images/orang-asli.png` — Orang Asli community showcase
+- `assets/images/doctor.jpg` — STEM / cardiology showcase
 
 ## ✍️ Editing tips
 
