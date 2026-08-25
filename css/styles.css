@@ -324,6 +324,69 @@ img {
     font-size: 1rem;
 }
 
+/* ---------- About Me ---------- */
+.about-section {
+    scroll-margin-top: 90px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.about-photo {
+    margin: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-photo figcaption {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--primary);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    background: #F8FAFC;
+}
+
+.about-body h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+.about-body p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    max-width: 640px;
+}
+
+.about-body .btn {
+    margin-top: 0.5rem;
+}
+
 /* ---------- Grid ---------- */
 .grid-4 {
     display: grid;
@@ -447,6 +510,11 @@ img {
 .img-stem {
     background-image: url('../assets/images/doctor.jpg'),
         linear-gradient(135deg, #064E3B 0%, #059669 50%, #34D399 100%);
+    /* Reframe the portrait: bias the crop toward the top so a little space
+       sits above the hair (head is no longer clipped), and give the box extra
+       height so more of the lower body is visible in the frame. */
+    background-position: center 12%;
+    min-height: 460px;
 }
 
 .img-label {
@@ -675,6 +743,27 @@ footer {
 
     .container {
         margin-top: -2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-photo {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .about-body p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-body .btn {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
